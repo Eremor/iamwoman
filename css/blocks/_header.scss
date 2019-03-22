@@ -1,0 +1,52 @@
+.page-header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.page-header__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.page-header__burger{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+// Burger menu
+@import "burger";
+
+.page-header__logo{
+  width: 50%;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include open-bold();
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.logo__title{
+  font-size: 24px;
+}
+
+.logo__subtitle{
+  font-size: 12px;
+}
+
+.page-header__icons{
+  width: 50%;
+}
+
+// Icons
+@import "icons";

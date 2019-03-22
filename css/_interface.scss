@@ -1,18 +1,22 @@
-$primarycolor: #91171d;
-$secondarycolor: #ece5e1;
-$maintextcolor: #342b2b;
+$primary: #91171d;
+$secondary: #ece5e1;
+$maintext: #342b2b;
 
 body{
   @include light();
-  color: red;
-  background-color: red;
+  color: $maintext;
+}
+
+.container{
+  max-width: 1180px;
+  margin: auto;
 }
 
 .btn{
   padding: 12px 37px;
   border: none;
   border-radius: 3px;
-  background-color: $primarycolor;
+  background-color: $primary;
   color: #ffffff;
   vertical-align: middle;
   white-space: nowrap;

@@ -1,0 +1,38 @@
+.burger__checkbox{
+  display: none;
+}
+
+.burger__label{
+  cursor: pointer;
+  width: 36px;
+  height: 16px;
+  display: block;
+}
+
+.burger__line{
+  display: block;
+  position: relative;
+  width: 36px;
+  height: 2px;
+  background-color: $maintext;
+
+  &::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: $maintext;
+    position: absolute;
+    right: 0;
+    top: 7px;
+  }
+
+  &::after{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: $maintext;
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+}
