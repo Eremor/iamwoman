@@ -1,2 +1,8 @@
 //Импорт шрифтов
-@import "fonts"
+@import "fonts";
+
+// Импорт общих настроек
+@import "interface";
+
+// Header
+@import "blocks/header";
