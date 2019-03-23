@@ -1,0 +1,25 @@
+.sidebar{
+  display: flex;
+  width: 70px;
+  height: 80vh;
+  background-color: $secondary;
+}
+
+.sidebar__text{
+  font-size: 18px;
+  transform: rotate(-90deg);
+  margin: 0;
+  width: 200px;
+  position: absolute;
+  bottom: 250px;
+  left: -65px;
+}
+
+.sidebar__line{
+  position: absolute;
+  width: 1px;
+  height: 95px;
+  left: 35px;
+  bottom: 35px;
+  background-color: $maintext;
+}
