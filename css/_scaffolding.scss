@@ -1,15 +1,10 @@
-$primary: #91171d;
-$secondary: #ece5e1;
-$maintext: #342b2b;
-
 body{
-  @include light();
-  color: $maintext;
-}
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
 
-.container{
-  max-width: 1180px;
-  margin: auto;
+  @include regular();
+  color: $maintext;
 }
 
 .btn{

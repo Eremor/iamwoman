@@ -1,25 +1,59 @@
 .sidebar{
-  display: flex;
-  width: 70px;
-  height: 80vh;
   background-color: $secondary;
 }
 
 .sidebar__text{
-  font-size: 18px;
   transform: rotate(-90deg);
   margin: 0;
   width: 200px;
   position: absolute;
   bottom: 250px;
-  left: -65px;
 }
 
 .sidebar__line{
   position: absolute;
   width: 1px;
   height: 95px;
-  left: 35px;
-  bottom: 35px;
   background-color: $maintext;
+}
+
+@media only screen and (min-width: $mobile-width) {
+  .sidebar{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $table-width) {
+  .sidebar{
+    display: flex;
+    width: 50px;
+    height: 100vh;
+  }
+
+  .sidebar__text{
+    font-size: 14px;
+    left: -75px;
+  }
+
+  .sidebar__line{
+    left: 24px;
+    bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .sidebar{
+    width: 70px;
+    height: 80vh;
+  }
+
+  .sidebar__text{
+    font-size: 18px;
+    left: -65px;
+  }
+
+  .sidebar__line{
+    left: 35px;
+    bottom: 35px;
+  }
 }

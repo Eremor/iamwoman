@@ -1,0 +1,30 @@
+.user-menu{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-menu__list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-menu__item{
+  list-style: none;
+}
+
+@media only screen and (min-width: $mobile-width) {
+  .user-menu__list{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: $table-width) {
+  .user-menu__list{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  
+}
